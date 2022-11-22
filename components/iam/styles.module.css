@@ -1,4 +1,7 @@
+.container{
+  }
 .name{
+  
   font-size: 2.8rem;
   line-height: 1;
   margin-block-start: 0;
@@ -14,4 +17,24 @@
 .work{
   font-size: 1rem;
   margin-block-start: 0.7rem;
+}
+
+@media screen and (max-width: 500px) {
+  .name{
+    width: min-content;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .name{
+    font-size: 3.2rem;
+  }
+  
+  .greeting{
+    font-size: 1.7rem;
+  }
+  
+  .work{
+    font-size: 1rem;
+  }
 }

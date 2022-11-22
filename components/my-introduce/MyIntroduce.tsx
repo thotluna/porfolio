@@ -4,9 +4,11 @@ import styles from "./styles.module.css";
 
 export const MyIntroduce = () => {
   return (
-    <section className={styles["section-head"]}>
-      <Avatar />
-      <Iam />
-    </section>
+    <div className={styles.container}>
+      <section className={styles["section-head"]}>
+        <Avatar />
+        <Iam />
+      </section>
+    </div>
   );
 };

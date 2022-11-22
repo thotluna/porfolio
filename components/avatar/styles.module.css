@@ -1,9 +1,19 @@
+
+
 .profileImage {
   width: 135px;
   height: 135px;
   overflow: hidden;
+  
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 650px) {
+  .profileImage{
+    width: 200px;
+    height: 200px;
+  }
 }
