@@ -9,6 +9,7 @@ export const Avatar = () => {
       className={styles.profileImage}
       src={profilePic}
       alt="Picture of the author"
+      priority
     />
   );
 };
