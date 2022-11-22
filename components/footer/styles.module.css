@@ -1,6 +1,6 @@
 .footer{
   width: 100vw;
   padding: .5rem;
-  background-color: black;
-  color: cornsilk;
+  background-color: var(--bg-footer-color);
+  color: var(--light-color-dark);
 }
