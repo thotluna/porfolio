@@ -8,7 +8,7 @@ export const MyMessage = () => {
         desarrollándolo, pero pronto estará listo.
       </p>
 
-      <p className={styles.textCenter}>Me encantaría que me visites pronto.</p>
+      <p className={styles.textCenter}>Me encantaría que volvieras pronto.</p>
     </article>
   );
 };
