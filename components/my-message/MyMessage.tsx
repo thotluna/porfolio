@@ -4,11 +4,11 @@ export const MyMessage = () => {
   return (
     <article>
       <p className={styles.textCenter}>
-        Gracias por visitar mi porfolio. Actualmente me encuento
-        desarrollandolo, pero pronto estara listo.
+        Gracias por visitar mi porfolio. Actualmente, me encuentro
+        desarrollándolo, pero pronto estará listo.
       </p>
 
-      <p className={styles.textCenter}>Me encantaria que me visites pronto.</p>
+      <p className={styles.textCenter}>Me encantaría que me visites pronto.</p>
     </article>
   );
 };
