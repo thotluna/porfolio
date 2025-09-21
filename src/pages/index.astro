@@ -1,16 +1,223 @@
 ---
-
+import { Icon } from "astro-icon/components";
+import "../styles/global.css";
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eladio Feijóo Porfolios</title>
+    </head>
+    <body>
+        <div class="sun"></div>
+        <div class="moon"></div>
+        <div class="content">
+            <header>
+                <span>ELADIO FEIJOO</span>
+                <span>SOFTWARE DEVELOPMENT</span>
+            </header>
+            <main>
+                <h1>Singularity</h1>
+                <h2 class="title">Comming Soon</h2>
+                <ul class="socials">
+                    <li class="github-container">
+                        <a href="https://github.com/thotluna" target="_blank"
+                            ><Icon
+                                name="github"
+                                size={36}
+                                class="icon hover:scale-110 hover:text-white transition-all duration-200"
+                            /></a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/eladio-feijoo/"
+                            target="_blank"
+                            ><Icon
+                                name="linkedin"
+                                size={36}
+                                class="icon hover:scale-110 hover:text-white transition-all duration-200"
+                            /></a
+                        >
+                    </li>
+                </ul>
+            </main>
+        </div>
+        <footer>created by ELADIO FEIJOO</footer>
+    </body>
 </html>
+
+<style>
+    :root {
+        --min-width: 318px;
+    }
+
+    body {
+        min-width: var(--min-width);
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+    }
+    .content {
+        min-width: var(--min-width);
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    header {
+        display: flex;
+        padding: 16px;
+        font-size: 12px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .title {
+        position: relative;
+        font-size: clamp(2rem, 5vw, 5rem);
+        color: var(--dark-bg);
+        opacity: 1;
+        &::after {
+            content: "Comming Soon";
+            color: red;
+            font-size: clamp(2rem, 5vw, 5rem);
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background-image: linear-gradient(
+                to top,
+                var(--dark-bg) 20%,
+                #d0c8d8
+            );
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            opacity: 0;
+            animation: light-moon 2000ms linear 1000ms;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .socials {
+        display: flex;
+        gap: 8px;
+        color: #aba4b3;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        padding: 16px;
+    }
+    .sun {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background: #ff6b35 0%;
+        filter: blur(20px);
+        animation: sunrise 3s linear;
+        animation-fill-mode: forwards;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            background-color: #ff9e53;
+            filter: blur(30px);
+            animation: sunrise-traslate 1s linear;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .moon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: var(--dark-bg);
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -0%);
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            opacity: 0;
+            background: linear-gradient(to top, var(--dark-bg) 60%, #595163);
+            animation: light-moon 2s linear 500ms;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    @keyframes light-moon {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .github-container {
+        position: relative;
+        width: 36px;
+        height: 36px;
+    }
+
+    .icon {
+        display: block;
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: fall-and-bounce 1.2s cubic-bezier(0.4, 0, 0.2, 1) 2s forwards;
+    }
+
+    @keyframes fall-and-bounce {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px) scale(1);
+        }
+        30% {
+            opacity: 1;
+            transform: translateY(10px) scale(1.1, 0.9);
+        }
+        50% {
+            transform: translateY(-10px) scale(0.95, 1.05);
+        }
+        65% {
+            transform: translateY(5px) scale(1.02, 0.98);
+        }
+        75% {
+            transform: translateY(-3px) scale(0.99, 1.01);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    @keyframes sunrise {
+        to {
+            transform: translate(-50%, -70%);
+        }
+    }
+</style>

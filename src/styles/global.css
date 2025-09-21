@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'JuliusSansOne-Regular';
+  src: url('/fonts/JuliusSansOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    --dark-bg: #1B181F;
+    --text-color: #f0f0f0;
+    --accent-color: #6a448a;
+    --eclipse-dark-circle: #211c2c;
+    --eclipse-glow-start: #8c4696;
+    --eclipse-glow-mid: #5a286e;
+    --eclipse-glow-end: #1e0a28;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    font-family: "JuliusSansOne-Regular", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+}
+
