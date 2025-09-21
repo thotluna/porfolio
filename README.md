@@ -1,43 +1,72 @@
-# Astro Starter Kit: Minimal
+# My Personal Portfolio
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+Welcome to my personal portfolio! This is where I showcase my projects, skills, and professional experience as a web developer. Built with [Astro](https://astro.build/) for optimal performance and modern web standards.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 About Me
 
-## 🚀 Project Structure
+I'm a passionate web developer with experience in creating innovative digital solutions. I specialize in frontend development, user interface design, and exceptional user experiences.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Technologies & Skills
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Framework:** Astro
+- **Core Web:** HTML5, CSS3, JavaScript
+- **Styling:** Vanilla CSS
+- **Version Control:** Git
+- **Key Features:** Static Site Generation, Performance Optimization, SEO-friendly
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🚀 Getting Started
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Follow these steps to run this project locally:
 
-Any static assets, like images, can be placed in the `public/` directory.
+1. **Clone the repository**
 
-## 🧞 Commands
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
 
-All commands are run from the root of the project, from a terminal:
+2. **Install Astro** (if not already installed)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+   ```bash
+   npm install -g astro
+   ```
 
-## 👀 Want to learn more?
+3. **Start the development server**
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+   ```bash
+   astro dev
+   ```
+
+   The site will be available at `http://localhost:4321`
+
+4. **Build for production**
+
+   ```bash
+   astro build
+   ```
+
+5. **Preview the production build**
+   ```bash
+   astro preview
+   ```
+
+## 📂 Featured Projects
+
+1. **Portfolio Website** - A modern, performant portfolio built with Astro, featuring responsive design and excellent performance metrics. [View Live](https://your-portfolio-url.com)
+2. **Project 2** - Brief description of the project and technologies used.
+3. **Project 3** - Brief description of the project and technologies used.
+
+## 📫 Contact
+
+- 📧 Email: [eladio.feijoo@gmail.com](mailto:eladio.feijoo@gmail.com)
+- 💼 LinkedIn: [Eladio Feijoo](https://www.linkedin.com/in/eladio-feijoo/)
+- 🌐 Website: [Eladio Feijoo](https://eladiofeijoo.dev)
+- 🐙 GitHub: [@Thotluna](https://github.com/thotluna)
+
+## 📝 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
+---
+
+✨ Thank you for visiting my portfolio. I hope you enjoy exploring my projects! ✨
